@@ -28,7 +28,6 @@ class Bot:
         if len(nodes) == 0:
             raise EndGame
         mas = [(nodes[cell].data, cell) for cell in nodes]
-        print(mas)
         out = max(mas, key=lambda x: x[0])[1]
         return out
 
